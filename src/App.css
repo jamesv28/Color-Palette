@@ -1,0 +1,15 @@
+.palette {
+    height: 100vh;
+}
+.palette-colors {
+    height: 90%;
+}
+
+.colorBox {
+    width: 20%;
+    height: 25%;
+    margin: 0 auto;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;;
+}
