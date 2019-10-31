@@ -5,6 +5,7 @@
   "dependencies": {
     "chroma-js": "^2.0.6",
     "hover.css": "^2.3.2",
+    "rc-slider": "^8.7.1",
     "react": "^16.10.2",
     "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.10.2",
