@@ -112,5 +112,27 @@
 
 .copy-msg p {
     font-size: 2rem;
+}
 
+.slider {
+    width: 300px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.rc-slider-track {
+    background: transparent !important;
+}
+
+.rc-slider-handle,
+.rc-slider-handle:hover,
+.rc-slider-handle:active,
+.rc-slider-handle:focus {
+    background-color: green !important;
+    outline: none !important;
+    border: 2px solid green !important;
+}
+
+.rc-slider-rail {
+    height: 12px !important;
 }
