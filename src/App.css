@@ -49,6 +49,10 @@
     font-size: 12px;
 }
 
+.body-content span {
+    font-size: 10px;
+}
+
 .body-content button {
     float: right;
     margin-right: 15px;
@@ -129,10 +133,27 @@
 .rc-slider-handle:active,
 .rc-slider-handle:focus {
     background-color: green !important;
-    outline: none !important;
+    /* outline: none !important; */
     border: 2px solid green !important;
 }
 
 .rc-slider-rail {
     height: 12px !important;
+}
+
+.navBar {
+    display: flex;
+    height: 6vh;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo {
+   margin-right: 15px;
+   padding: 0 13px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
 }
