@@ -180,3 +180,12 @@
     margin-left: 1rem;
 }
 
+.lightText {
+    color: white;
+}
+
+.darkText {
+     color: black !important;
+}
+
+
