@@ -26,7 +26,7 @@ class ColorBox extends Component {
         const {copied} = this.state;
         const isDarkColor = chroma(background).luminance() <= 0.06;
         const isLightColor = chroma(background).luminance() >= 0.8;
-        
+
         return (
             <CopyToClipboard text={background} onCopy={this.changeCopyState} >
                 <div style={{background: background}} className="colorBox">
@@ -37,10 +37,10 @@ class ColorBox extends Component {
                     </div>
                     <div className="copy-container">
                         <div className="body-content">
-                            <span className={isDarkColor && 'lightText'}>{name}</span>
+                            <span className={isDarkColor ? 'lightText' : undefined}>{name}</span>
                             { showLink && (
                                 <Link to={`/palette/${paletteId}/${colorId}`} onClick={e => e.stopPropagation()}>
-                                    <button className={`see-more ${isLightColor && "darkText"}`}>More</button>
+                                    <button className={isLightColor ? "see-more darkText" : "see-more"}>More</button>
                                 </Link>
                             ) }
                         </div>
