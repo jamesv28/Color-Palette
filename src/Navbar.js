@@ -51,7 +51,7 @@ class Navbar extends Component {
                 <div className="logo">
                     <Link to="/">Masterpiece</Link>
                 </div>
-                <div className="slider-container">
+                { this.props.isSingleColor &&  ( <div className="slider-container">
                     <span>Level: {level}</span>
                     <div className="slider">
                         <Slider
@@ -62,7 +62,8 @@ class Navbar extends Component {
                             onAfterChange={changeLevel}
                         />
                     </div>       
-                </div>
+                </div>   
+                )}
                 <div className="select-container">
                         <Select 
                             value={format}
