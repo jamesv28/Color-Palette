@@ -38,6 +38,7 @@
 }
 .back-button {
     opacity: 1;
+    text-decoration: none;
 }
 .colorBox:hover .copy-button {
     opacity: 1;
