@@ -11,9 +11,10 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import {ChromePicker} from 'react-color';
+import Button from '@material-ui/core/Button';
 
-
-const drawerWidth = 240;
+const drawerWidth = 400;
 
 const useStyles = makeStyles(theme => ({
 
@@ -21,7 +22,7 @@ const useStyles = makeStyles(theme => ({
       display: 'flex',
     },
     appBar: {
-      transition: theme.transitions.create(['margin', 'width'], {
+        transition: theme.transitions.create(['margin', 'width'], {
         easing: theme.transitions.easing.sharp,
         duration: theme.transitions.duration.leavingScreen,
       }),
@@ -123,7 +124,22 @@ const useStyles = makeStyles(theme => ({
               </IconButton>
             </div>
             <Divider />
-            
+            <h4>Design Your Palette</h4>
+            <div>
+              <Button variant="outlined" color="primary">
+                Clear Palette
+              </Button>
+              <Button variant="contained" color="primary">
+                Random Color
+              </Button>
+            </div>
+            <ChromePicker 
+              color="purple"
+              onChangeComplete={(newColor) => console.log(newColor)}
+            />
+            <Button variant="outlined" color="primary">
+              Add Color
+            </Button>
           </Drawer>
           <main
             className={clsx(classes.content, {
@@ -131,7 +147,7 @@ const useStyles = makeStyles(theme => ({
             })}
           >
             <div className={classes.drawerHeader} />
-           
+            
           </main>
         </div>
         )
